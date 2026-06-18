@@ -1,0 +1,97 @@
+.home {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home-content{
+  width: 100%;
+  height: 100vh;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.home-content h1 .highlight {
+  color: #38bdf8; 
+}
+
+.home-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.typing {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 3px;
+  background: #38bdf8;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.home-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.btn {
+  /* background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease; */
+  text-decoration: none;
+   background: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+.btn-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-outline:hover {
+   background: transparent;
+}

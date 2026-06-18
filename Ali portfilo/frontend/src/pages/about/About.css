@@ -1,0 +1,70 @@
+.about-section {
+  width: 100%;
+  padding: 100px 20px;
+  /* background: #f8f9fab1; */
+  background: #f9f9f9;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 20px;
+  /* box-shadow: 0 6px 16px rgba(0,0,0,0.15); */
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.highlight {
+  color: #007acc;
+  font-weight: bold;
+}
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.skill-tag {
+  background: #007acc;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.about-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #007acc;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.about-btn:hover {
+  background: #005f99;
+}

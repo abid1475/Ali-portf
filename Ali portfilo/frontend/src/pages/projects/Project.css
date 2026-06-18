@@ -1,0 +1,40 @@
+.portfolio-page {
+  margin-top: 70px;
+  width: 100%;
+  height: fit-content;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-grid {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+}
+.image-container {
+  width: 350px;
+  height: 65vh;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  background: white;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 5s ease;
+}
+
+.image-container:hover img {
+  transform: translateY(calc(-100% + 65vh));
+}
+.image-container:not(:hover) img {
+  transition: transform 2s ease-in-out;
+}

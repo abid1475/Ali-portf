@@ -1,0 +1,92 @@
+/* Wrapper for thread + button */
+.floating-wrapper {
+  position: fixed;
+  top: 30px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: dropIn 1s ease-out forwards, sway 3s ease-in-out infinite;
+  transform-origin: top center;
+  z-index: 1000;
+}
+
+/* The hanging thread */
+.thread {
+  width: 2px;
+  height: 90px;
+  z-index: 90;
+  background-color: #444;
+  animation: sway 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* The button itself */
+.floating-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: shakeLR 2s ease-in-out infinite; /* left-right shake */
+}
+
+/* Drop in from top on page load */
+@keyframes dropIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slight sway (for both thread + button wrapper) */
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Left-right shake for button only */
+@keyframes shakeLR {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Hover effect */
+.floating-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
