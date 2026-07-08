@@ -1,5 +1,5 @@
 .about-section {
-  width: 100%;
+  width:100%;
   padding: 100px 20px;
   /* background: #f8f9fab1; */
   background: #f9f9f9;
@@ -23,12 +23,12 @@
 .about-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #222;
+  color:#222;
 }
 
 .about-content p {
   font-size: 1.1rem;
-  color: #555;
+  color:#555;
   margin-bottom: 20px;
   line-height: 1.7;
 }
